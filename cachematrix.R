@@ -37,7 +37,7 @@ cacheSolve <- function(x, ...) {
     }
     ## Get the original matrix
     data <- x$get()
-    ## Check its determinant to see if it is invertible
+    ## Check if it is symmetric and also its determinant to see if it is invertible
     ## Although the matrix is assumed always invertible in this assignment 
     if(isSymmetric(data))
     	if(det(data) != 0)
