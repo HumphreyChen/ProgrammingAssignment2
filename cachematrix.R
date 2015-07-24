@@ -34,10 +34,13 @@ cacheSolve <- function(x, ...) {
     data <- x$get()
     ## Check its determinant to see if it is invertible
     ## Although the matrix is assumed always invertible in this assignment 
-    if(det(data) != 0)
-        m <- solve(data)
+    if(isSymmetric(data))
+    	if(det(data) != 0)
+        	m <- solve(data)
+        else 
+        	message("Warning: inverse matrix doesn't exist")
     else 
-        message("Warning: inverse matrix doesn't exist")
+        message("Warning: it is not a symmetric matrix")
     # Assign the result of matrix inverse 
     x$setInverse(m)
     m
