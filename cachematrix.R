@@ -4,13 +4,18 @@
 ## A function for matrix assignment: Return a list of functions
 ## Set and get the original/inverse matrix
 makeCacheMatrix <- function(x = matrix()) {
+	## m is the inverse matrix
     m <- NULL
+    ## assign matrix
     set <- function(y) {
-        x <<- y
+    	x <<- y
         m <<- NULL
     }
+    ## get original matrix
     get <- function() x
+    ## set inverse matrix (may not be applicable for this assignment because the inverse matrix is supposed to be obtained via matrix solver, rather than user assignment)
     setInverse <- function(im) m <<- im
+    ## get inverse matrix 
     getInverse <- function() m
     
     ## return the list of functions
