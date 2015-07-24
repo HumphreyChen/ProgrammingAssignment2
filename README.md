@@ -1,6 +1,9 @@
 ### Introduction
 
-This is the second R-Programming assignment which has been finished with cache matrix inverse solver 
+This is the second R-Programming assignment which has been finished with cache matrix inverse solver.
+
+A branch (my_matrixSolver) is created under the original fork repository to more easily differentiate the codes between the original template and the finished R code.
+
 
 ### Example: 
 
